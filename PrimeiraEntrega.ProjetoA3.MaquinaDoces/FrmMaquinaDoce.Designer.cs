@@ -21,6 +21,8 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             base.Dispose(disposing);
         }
 
+        
+
         #region Código gerado pelo Windows Form Designer
 
         /// <summary>
@@ -33,30 +35,24 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             this.btnDoisReais = new System.Windows.Forms.Button();
             this.btnCincoReais = new System.Windows.Forms.Button();
             this.lblRetorno = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnComprar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnDoceC = new System.Windows.Forms.Button();
             this.btnDoceB = new System.Windows.Forms.Button();
             this.btnDoceA = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnUmReal
             // 
-            this.btnUmReal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(244)))), ((int)(((byte)(232)))));
+            this.btnUmReal.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnUmReal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUmReal.ForeColor = System.Drawing.Color.White;
             this.btnUmReal.Location = new System.Drawing.Point(12, 262);
             this.btnUmReal.Name = "btnUmReal";
-            this.btnUmReal.Size = new System.Drawing.Size(248, 95);
+            this.btnUmReal.Size = new System.Drawing.Size(248, 83);
             this.btnUmReal.TabIndex = 0;
             this.btnUmReal.Text = "R$1,00";
             this.btnUmReal.UseVisualStyleBackColor = false;
@@ -64,11 +60,12 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             // 
             // btnDoisReais
             // 
-            this.btnDoisReais.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(208)))), ((int)(((byte)(249)))));
+            this.btnDoisReais.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnDoisReais.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDoisReais.ForeColor = System.Drawing.Color.White;
             this.btnDoisReais.Location = new System.Drawing.Point(263, 262);
             this.btnDoisReais.Name = "btnDoisReais";
-            this.btnDoisReais.Size = new System.Drawing.Size(248, 95);
+            this.btnDoisReais.Size = new System.Drawing.Size(248, 83);
             this.btnDoisReais.TabIndex = 1;
             this.btnDoisReais.Text = "R$2,00";
             this.btnDoisReais.UseVisualStyleBackColor = false;
@@ -76,11 +73,12 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             // 
             // btnCincoReais
             // 
-            this.btnCincoReais.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnCincoReais.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnCincoReais.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCincoReais.ForeColor = System.Drawing.Color.White;
             this.btnCincoReais.Location = new System.Drawing.Point(517, 262);
             this.btnCincoReais.Name = "btnCincoReais";
-            this.btnCincoReais.Size = new System.Drawing.Size(248, 95);
+            this.btnCincoReais.Size = new System.Drawing.Size(248, 83);
             this.btnCincoReais.TabIndex = 2;
             this.btnCincoReais.Text = "R$5,00";
             this.btnCincoReais.UseVisualStyleBackColor = false;
@@ -89,61 +87,35 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             // lblRetorno
             // 
             this.lblRetorno.AutoSize = true;
-            this.lblRetorno.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRetorno.Location = new System.Drawing.Point(115, 158);
+            this.lblRetorno.BackColor = System.Drawing.Color.Black;
+            this.lblRetorno.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRetorno.ForeColor = System.Drawing.Color.Lime;
+            this.lblRetorno.Location = new System.Drawing.Point(118, 169);
             this.lblRetorno.Name = "lblRetorno";
-            this.lblRetorno.Size = new System.Drawing.Size(20, 24);
+            this.lblRetorno.Size = new System.Drawing.Size(17, 20);
             this.lblRetorno.TabIndex = 3;
             this.lblRetorno.Text = "0";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 24);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Bala";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(302, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 24);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Chiclete";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(567, 41);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 24);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Chocolate";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(13, 158);
+            this.label4.BackColor = System.Drawing.Color.Black;
+            this.label4.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Lime;
+            this.label4.Location = new System.Drawing.Point(23, 169);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 24);
+            this.label4.Size = new System.Drawing.Size(99, 20);
             this.label4.TabIndex = 7;
-            this.label4.Text = "SALDO: R$";
+            this.label4.Text = "Seu Saldo: R$";
             // 
             // btnComprar
             // 
-            this.btnComprar.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnComprar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnComprar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnComprar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnComprar.Location = new System.Drawing.Point(391, 363);
+            this.btnComprar.ForeColor = System.Drawing.Color.White;
+            this.btnComprar.Location = new System.Drawing.Point(391, 351);
             this.btnComprar.Name = "btnComprar";
-            this.btnComprar.Size = new System.Drawing.Size(374, 95);
+            this.btnComprar.Size = new System.Drawing.Size(374, 78);
             this.btnComprar.TabIndex = 8;
             this.btnComprar.Text = "CONCLUIR COMPRA";
             this.btnComprar.UseVisualStyleBackColor = false;
@@ -151,11 +123,12 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.LightCoral;
+            this.btnCancelar.BackColor = System.Drawing.Color.Maroon;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(11, 363);
+            this.btnCancelar.ForeColor = System.Drawing.Color.White;
+            this.btnCancelar.Location = new System.Drawing.Point(12, 351);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(374, 95);
+            this.btnCancelar.Size = new System.Drawing.Size(374, 78);
             this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -163,7 +136,7 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             // 
             // btnDoceC
             // 
-            this.btnDoceC.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnDoceC.BackColor = System.Drawing.Color.DimGray;
             this.btnDoceC.Enabled = false;
             this.btnDoceC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDoceC.Location = new System.Drawing.Point(517, 219);
@@ -171,12 +144,12 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             this.btnDoceC.Size = new System.Drawing.Size(248, 37);
             this.btnDoceC.TabIndex = 12;
             this.btnDoceC.Text = "CHOCOLATE";
-            this.btnDoceC.UseVisualStyleBackColor = true;
+            this.btnDoceC.UseVisualStyleBackColor = false;
             this.btnDoceC.Click += new System.EventHandler(this.btnDoceC_Click);
             // 
             // btnDoceB
             // 
-            this.btnDoceB.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnDoceB.BackColor = System.Drawing.Color.DimGray;
             this.btnDoceB.Enabled = false;
             this.btnDoceB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDoceB.Location = new System.Drawing.Point(263, 219);
@@ -184,12 +157,12 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             this.btnDoceB.Size = new System.Drawing.Size(248, 37);
             this.btnDoceB.TabIndex = 11;
             this.btnDoceB.Text = "CHICLETE";
-            this.btnDoceB.UseVisualStyleBackColor = true;
+            this.btnDoceB.UseVisualStyleBackColor = false;
             this.btnDoceB.Click += new System.EventHandler(this.btnDoceB_Click);
             // 
             // btnDoceA
             // 
-            this.btnDoceA.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnDoceA.BackColor = System.Drawing.Color.DimGray;
             this.btnDoceA.Enabled = false;
             this.btnDoceA.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDoceA.ForeColor = System.Drawing.Color.Black;
@@ -198,73 +171,47 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             this.btnDoceA.Size = new System.Drawing.Size(248, 37);
             this.btnDoceA.TabIndex = 10;
             this.btnDoceA.Text = "BALA";
-            this.btnDoceA.UseVisualStyleBackColor = true;
+            this.btnDoceA.UseVisualStyleBackColor = false;
             this.btnDoceA.Click += new System.EventHandler(this.btnDoceA_Click);
             // 
-            // groupBox1
+            // textBox2
             // 
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 51);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(754, 82);
-            this.groupBox1.TabIndex = 13;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Produtos";
+            this.textBox2.BackColor = System.Drawing.Color.Black;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.Lime;
+            this.textBox2.Location = new System.Drawing.Point(12, 24);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(753, 118);
+            this.textBox2.TabIndex = 0;
+            this.textBox2.TabStop = false;
+            this.textBox2.Text = "Olá, bem-vindo(a) a Máquina de Doces. Insira o valor do produto que deseja.\r\n\r\nBa" +
+    "la.............................R$6.00\r\nChiclete......................R$7.00\r\nCho" +
+    "colate...................R$8,00";
             // 
-            // label7
+            // textBox1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(668, 41);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 24);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "R$8,00";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(377, 41);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 24);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "R$7,00";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(49, 41);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 24);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "R$6,00";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(13, 12);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(375, 24);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Olá, bem-vindo(a) a Fábrica de Chocolates!";
+            this.textBox1.BackColor = System.Drawing.Color.Black;
+            this.textBox1.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.Lime;
+            this.textBox1.Location = new System.Drawing.Point(12, 157);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(252, 41);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.TabStop = false;
             // 
             // FrmMaquinaDoces
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(779, 466);
+            this.ClientSize = new System.Drawing.Size(783, 443);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.lblRetorno);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.btnDoceC);
             this.Controls.Add(this.btnDoceB);
             this.Controls.Add(this.btnDoceA);
@@ -274,14 +221,12 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             this.Controls.Add(this.btnCincoReais);
             this.Controls.Add(this.btnDoisReais);
             this.Controls.Add(this.btnUmReal);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.textBox1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmMaquinaDoces";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Máquina de Doces";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,20 +238,14 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
         private System.Windows.Forms.Button btnDoisReais;
         private System.Windows.Forms.Button btnCincoReais;
         private System.Windows.Forms.Label lblRetorno;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnComprar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnDoceC;
         private System.Windows.Forms.Button btnDoceB;
         private System.Windows.Forms.Button btnDoceA;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

@@ -24,14 +24,8 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             public bool DoceB { get; set; }
 
             public bool DoceC { get; set; }
-
-            //public Decimal? ValorDoceA { get; set; }
-
-            //public Decimal? ValorDoceB { get; set; }
-
-            //public Decimal? ValorDoceC { get; set; }
+                       
         }
-
 
         private void btnUmReal_Click(object sender, EventArgs e)
         {
@@ -43,7 +37,6 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
         private void btnDoisReais_Click(object sender, EventArgs e)
         {
             decimal valor = 2;
-
             var doce = new Doce();
             CalculaDoces(valor, doce);
         }
@@ -90,7 +83,6 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             {
                 btnDoceA.BackColor = Color.LightGreen;
                 btnDoceA.Enabled = true;
-
             }
             else if(total == 7)
             {
@@ -123,21 +115,16 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             }
             else
             {
-                MessageBox.Show("O total devolvido será de: R$" + lblRetorno.Text + ",00", 
-                    "COMPRA CANCELADA", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                MessageBox.Show("O total devolvido será de: R$" + lblRetorno.Text + ",00", "COMPRA CANCELADA", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ResetarCampos();
             }
 
             lblRetorno.Text = "0";
-
         }
 
         private void btnComprar_Click(object sender, EventArgs e)
         {
             string valorTotal = lblRetorno.Text;
-
-
             if (!comprouDoce)
             {
                 MessageBox.Show("Nenhuma operação foi executada.", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -145,15 +132,14 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             }
             else
             {
-                MessageBox.Show("Doces comprados! O seu troco será de: R$" + lblRetorno.Text + ",00",
-                    "COMPRA CONCLUÍDA", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                MessageBox.Show("Doces comprados! O seu troco será de: R$" + lblRetorno.Text + ",00","COMPRA CONCLUÍDA", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ResetarCampos();
             }
 
             lblRetorno.Text = "0";
 
             ResetarCampos();
+            comprouDoce = false;
         }
         
         private void ResetarCampos()
@@ -161,7 +147,7 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             btnDoceA.UseVisualStyleBackColor = true;
             btnDoceB.UseVisualStyleBackColor = true;
             btnDoceC.UseVisualStyleBackColor = true;
-
+            
             btnDoceA.Enabled = false;
             btnDoceB.Enabled = false;
             btnDoceC.Enabled = false;
@@ -169,25 +155,28 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
 
         private void btnDoceA_Click(object sender, EventArgs e)
         {
-            decimal valorRecebido = Convert.ToDecimal(lblRetorno.Text);
             var doce = new Doce();
             doce.DoceA = true;
-            CalculaDoces(valorRecebido, doce);
+            EnviarRequisicao(doce);
         }
 
         private void btnDoceB_Click(object sender, EventArgs e)
         {
-            decimal valorRecebido = Convert.ToDecimal(lblRetorno.Text);
             var doce = new Doce();
             doce.DoceB = true;
-            CalculaDoces(valorRecebido, doce);
+            EnviarRequisicao(doce);
         }
 
         private void btnDoceC_Click(object sender, EventArgs e)
         {
-            decimal valorRecebido = Convert.ToDecimal(lblRetorno.Text);
             var doce = new Doce();
             doce.DoceC = true;
+            EnviarRequisicao(doce);    
+        }
+
+        private void EnviarRequisicao(Doce doce)
+        {
+            decimal valorRecebido = Convert.ToDecimal(lblRetorno.Text);
             CalculaDoces(valorRecebido, doce);
         }
     }
