@@ -23,8 +23,7 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
 
             public bool DoceB { get; set; }
 
-            public bool DoceC { get; set; }
-                       
+            public bool DoceC { get; set; }                
         }
 
         private void btnUmReal_Click(object sender, EventArgs e)
@@ -48,6 +47,7 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             CalculaDoces(valor, doce);
         }
         
+        bool comprouDoce = false;
         public void CalculaDoces(decimal valor, Doce doce)
         {
             decimal valorExistente = Convert.ToDecimal(lblRetorno.Text);
@@ -70,11 +70,12 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             }
             else total = valor + valorExistente;
 
-            lblRetorno.Text = total.ToString();
+            if (total <= 0) lblRetorno.Text = "0";
+            else lblRetorno.Text = total.ToString();
 
             AtivaDoce();
         }
-        bool comprouDoce = false;
+        
         public void AtivaDoce()
         {
             decimal total = Convert.ToDecimal(lblRetorno.Text);
@@ -100,10 +101,7 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
                 btnDoceB.Enabled = true;
                 btnDoceC.Enabled = true;
             }
-            else
-            {
-                ResetarCampos();
-            }
+            else ResetarCampos();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
