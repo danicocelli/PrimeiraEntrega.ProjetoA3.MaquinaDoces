@@ -37,7 +37,6 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             this.lblRetorno = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnComprar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.btnDoceC = new System.Windows.Forms.Button();
             this.btnDoceB = new System.Windows.Forms.Button();
             this.btnDoceA = new System.Windows.Forms.Button();
@@ -114,26 +113,13 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             this.btnComprar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnComprar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnComprar.ForeColor = System.Drawing.Color.Black;
-            this.btnComprar.Location = new System.Drawing.Point(391, 351);
+            this.btnComprar.Location = new System.Drawing.Point(12, 351);
             this.btnComprar.Name = "btnComprar";
-            this.btnComprar.Size = new System.Drawing.Size(374, 78);
+            this.btnComprar.Size = new System.Drawing.Size(753, 78);
             this.btnComprar.TabIndex = 8;
-            this.btnComprar.Text = "CONCLUIR COMPRA";
+            this.btnComprar.Text = "TROCO";
             this.btnComprar.UseVisualStyleBackColor = false;
             this.btnComprar.Click += new System.EventHandler(this.btnComprar_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelar.Location = new System.Drawing.Point(12, 351);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(374, 78);
-            this.btnCancelar.TabIndex = 9;
-            this.btnCancelar.Text = "CANCELAR";
-            this.btnCancelar.UseVisualStyleBackColor = false;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnDoceC
             // 
@@ -219,7 +205,6 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             this.Controls.Add(this.btnDoceC);
             this.Controls.Add(this.btnDoceB);
             this.Controls.Add(this.btnDoceA);
-            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnComprar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnCincoReais);
@@ -244,7 +229,6 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
         private System.Windows.Forms.Label lblRetorno;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnComprar;
-        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnDoceC;
         private System.Windows.Forms.Button btnDoceB;
         private System.Windows.Forms.Button btnDoceA;

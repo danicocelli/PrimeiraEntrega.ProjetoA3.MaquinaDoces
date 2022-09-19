@@ -17,13 +17,14 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             InitializeComponent();
         }
 
-        public struct Doce 
+        public struct Doce
         {
             public bool DoceA { get; set; }
 
             public bool DoceB { get; set; }
 
-            public bool DoceC { get; set; }                
+            public bool DoceC { get; set; }
+
         }
 
         private void btnUmReal_Click(object sender, EventArgs e)
@@ -46,109 +47,82 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             var doce = new Doce();
             CalculaDoces(valor, doce);
         }
-        
-        bool comprouDoce = false;
+
         public void CalculaDoces(decimal valor, Doce doce)
         {
             decimal valorExistente = Convert.ToDecimal(lblRetorno.Text);
             decimal total = 0;
-            if (doce.DoceA)
-            {
-                total = valorExistente - 6;
-                comprouDoce = true;
-            }
+            if (doce.DoceA) total = valorExistente - 6; 
 
-            else if (doce.DoceB)
-            {
-                total = valorExistente - 7;
-                comprouDoce = true;
-            }
-            else if (doce.DoceC)
-            {
-                total = valorExistente - 8;
-                comprouDoce = true;
-            }
+            else if (doce.DoceB) total = valorExistente - 7;
+
+            else if (doce.DoceC) total = valorExistente - 8;
+       
             else total = valor + valorExistente;
 
             if (total <= 0) lblRetorno.Text = "0";
+            
             else lblRetorno.Text = total.ToString();
 
             AtivaDoce();
         }
-        
+
         public void AtivaDoce()
         {
             decimal total = Convert.ToDecimal(lblRetorno.Text);
-            
-            if(total == 6)
+
+            if (total == 6)
             {
                 btnDoceA.BackColor = Color.LightGreen;
                 btnDoceA.Enabled = true;
             }
-            else if(total == 7)
+            else if (total == 7)
             {
                 btnDoceA.BackColor = Color.LightGreen;
                 btnDoceB.BackColor = Color.LightGreen;
                 btnDoceA.Enabled = true;
                 btnDoceB.Enabled = true;
             }
-            else if(total >= 8)
+            else if (total >= 8)
             {
                 btnDoceA.BackColor = Color.LightGreen;
                 btnDoceB.BackColor = Color.LightGreen;
                 btnDoceC.BackColor = Color.LightGreen;
+                
                 btnDoceA.Enabled = true;
                 btnDoceB.Enabled = true;
                 btnDoceC.Enabled = true;
+
+                btnUmReal.Enabled = false;
+                btnDoisReais.Enabled = false;
+                btnCincoReais.Enabled = false;
             }
             else ResetarCampos();
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            if(lblRetorno.Text.Equals("0"))
-            {
-                MessageBox.Show("Nenhuma operação foi executada.", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
-            }
-            else
-            {
-                MessageBox.Show("O total devolvido será de: R$" + lblRetorno.Text + ",00", "COMPRA CANCELADA", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ResetarCampos();
-            }
-
-            lblRetorno.Text = "0";
         }
 
         private void btnComprar_Click(object sender, EventArgs e)
         {
             string valorTotal = lblRetorno.Text;
-            if (!comprouDoce)
-            {
-                MessageBox.Show("Nenhuma operação foi executada.", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
-            }
-            else
-            {
-                MessageBox.Show("Doces comprados! O seu troco será de: R$" + lblRetorno.Text + ",00","COMPRA CONCLUÍDA", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ResetarCampos();
-            }
-
-            lblRetorno.Text = "0";
-
+            if (valorTotal.Equals("0")) return;
+            MessageBox.Show("Doces comprados! O seu troco será de: R$" + lblRetorno.Text + ",00", "COMPRA CONCLUÍDA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             ResetarCampos();
-            comprouDoce = false;
+            lblRetorno.Text = "0";
+            ResetarCampos();
         }
-        
+
         private void ResetarCampos()
         {
             btnDoceA.UseVisualStyleBackColor = true;
             btnDoceB.UseVisualStyleBackColor = true;
             btnDoceC.UseVisualStyleBackColor = true;
-            
+
             btnDoceA.Enabled = false;
             btnDoceB.Enabled = false;
             btnDoceC.Enabled = false;
+
+            btnUmReal.Enabled = true;
+            btnDoisReais.Enabled = true;
+            btnCincoReais.Enabled = true;
         }
 
         private void btnDoceA_Click(object sender, EventArgs e)
@@ -169,7 +143,7 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
         {
             var doce = new Doce();
             doce.DoceC = true;
-            EnviarRequisicao(doce);    
+            EnviarRequisicao(doce);
         }
 
         private void EnviarRequisicao(Doce doce)
