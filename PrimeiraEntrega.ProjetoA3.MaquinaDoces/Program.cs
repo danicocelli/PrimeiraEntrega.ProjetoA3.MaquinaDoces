@@ -16,7 +16,7 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMaquinaDoces());
+            Application.Run(new FrmMenu());
         }
     }
 }
