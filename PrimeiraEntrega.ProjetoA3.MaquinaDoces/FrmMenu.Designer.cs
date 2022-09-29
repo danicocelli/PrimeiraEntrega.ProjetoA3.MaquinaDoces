@@ -38,6 +38,7 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             // 
             // btnDoce
             // 
+            this.btnDoce.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDoce.Location = new System.Drawing.Point(12, 120);
             this.btnDoce.Name = "btnDoce";
             this.btnDoce.Size = new System.Drawing.Size(419, 62);
@@ -48,6 +49,7 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             // 
             // btnElevador
             // 
+            this.btnElevador.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnElevador.Location = new System.Drawing.Point(12, 188);
             this.btnElevador.Name = "btnElevador";
             this.btnElevador.Size = new System.Drawing.Size(419, 62);
@@ -58,6 +60,7 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             // 
             // button3
             // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(12, 256);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(419, 62);

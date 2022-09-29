@@ -23,6 +23,9 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
   
         private async void TimerAndar(int andarSelecionado)
         {
+            if (andarSelecionado == andarAtual)
+                return;
+
             SimulacaoPortas(false);
             if (andarSelecionado < andarAtual)
             {
