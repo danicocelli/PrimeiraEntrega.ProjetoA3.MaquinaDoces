@@ -31,7 +31,7 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
         {
             this.btnDoce = new System.Windows.Forms.Button();
             this.btnElevador = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAnalisador = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -58,15 +58,16 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             this.btnElevador.UseVisualStyleBackColor = true;
             this.btnElevador.Click += new System.EventHandler(this.btnElevador_Click);
             // 
-            // button3
+            // btnAnalisador
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(12, 256);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(419, 62);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "TERCEIRA ENTREGA";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnAnalisador.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnalisador.Location = new System.Drawing.Point(12, 256);
+            this.btnAnalisador.Name = "btnAnalisador";
+            this.btnAnalisador.Size = new System.Drawing.Size(419, 62);
+            this.btnAnalisador.TabIndex = 2;
+            this.btnAnalisador.Text = "ANALISADOR LÉXICO";
+            this.btnAnalisador.UseVisualStyleBackColor = true;
+            this.btnAnalisador.Click += new System.EventHandler(this.btnAnalisador_Click);
             // 
             // label1
             // 
@@ -95,7 +96,7 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             this.ClientSize = new System.Drawing.Size(443, 328);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnAnalisador);
             this.Controls.Add(this.btnElevador);
             this.Controls.Add(this.btnDoce);
             this.MaximizeBox = false;
@@ -112,7 +113,7 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
 
         private System.Windows.Forms.Button btnDoce;
         private System.Windows.Forms.Button btnElevador;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnAnalisador;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }

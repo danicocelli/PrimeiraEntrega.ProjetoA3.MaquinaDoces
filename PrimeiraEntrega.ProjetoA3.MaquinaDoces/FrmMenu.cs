@@ -28,5 +28,11 @@ namespace PrimeiraEntrega.ProjetoA3.MaquinaDoces
             FrmElevador frmElevador = new FrmElevador();
             frmElevador.ShowDialog();
         }
+
+        private void btnAnalisador_Click(object sender, EventArgs e)
+        {
+            FrmAnalisadorLexico frmAnalisador = new FrmAnalisadorLexico();
+            frmAnalisador.ShowDialog();
+        }
     }
 }
